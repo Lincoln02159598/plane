@@ -1,0 +1,525 @@
+# Plane 后端 URL 路由索引（由 scripts/scan_backend_urls.py 生成，只读）
+# 扫描文件数: 45
+# 去重后路由总数（按文件累加）: 395
+
+## apps/api/plane/api/urls/asset.py
+  - assets/user-assets/
+  - assets/user-assets/<uuid:asset_id>/
+  - assets/user-assets/server/
+  - assets/user-assets/<uuid:asset_id>/server/
+  - workspaces/<str:slug>/assets/
+  - workspaces/<str:slug>/assets/<uuid:asset_id>/
+  (本文件去重后路由数: 6)
+
+## apps/api/plane/api/urls/cycle.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles-lite/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/cycle-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/cycle-issues/<uuid:issue_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/transfer-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-cycles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-cycles/<uuid:cycle_id>/unarchive/
+  (本文件去重后路由数: 9)
+
+## apps/api/plane/api/urls/estimate.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/<uuid:estimate_id>/estimate-points/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/<uuid:estimate_id>/estimate-points/<uuid:estimate_point_id>/
+  (本文件去重后路由数: 3)
+
+## apps/api/plane/api/urls/intake.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-issues/<uuid:issue_id>/
+  (本文件去重后路由数: 2)
+
+## apps/api/plane/api/urls/invite.py
+  - workspaces/<str:slug>/
+  (本文件去重后路由数: 1)
+
+## apps/api/plane/api/urls/label.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/labels/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/labels/<uuid:pk>/
+  (本文件去重后路由数: 2)
+
+## apps/api/plane/api/urls/member.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/members/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/members/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-members/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-members-lite/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-members/<uuid:pk>/
+  - workspaces/<str:slug>/members/
+  - workspaces/<str:slug>/members-lite/
+  (本文件去重后路由数: 7)
+
+## apps/api/plane/api/urls/module.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules-lite/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/module-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/module-issues/<uuid:issue_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:pk>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-modules/<uuid:pk>/unarchive/
+  (本文件去重后路由数: 8)
+
+## apps/api/plane/api/urls/project.py
+  - workspaces/<str:slug>/projects/
+  - workspaces/<str:slug>/projects-lite/
+  - workspaces/<str:slug>/projects/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/summary/
+  (本文件去重后路由数: 5)
+
+## apps/api/plane/api/urls/schema.py
+  - schema/
+  - schema/swagger-ui/
+  - schema/redoc/
+  (本文件去重后路由数: 3)
+
+## apps/api/plane/api/urls/state.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/states/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/states/<uuid:state_id>/
+  (本文件去重后路由数: 2)
+
+## apps/api/plane/api/urls/sticky.py
+  - workspaces/<str:slug>/
+  (本文件去重后路由数: 1)
+
+## apps/api/plane/api/urls/user.py
+  - users/me/
+  (本文件去重后路由数: 1)
+
+## apps/api/plane/api/urls/work_item.py
+  - workspaces/<str:slug>/issues/search/
+  - workspaces/<str:slug>/issues/<str:project_identifier>-<str:issue_identifier>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/links/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/links/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/comments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/comments/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/activities/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/activities/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-attachments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-attachments/<uuid:pk>/
+  - workspaces/<str:slug>/work-items/search/
+  - workspaces/<str:slug>/work-items/<str:project_identifier>-<str:issue_identifier>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/links/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/links/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/comments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/comments/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/activities/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/activities/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/attachments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/attachments/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:issue_id>/relations/
+  (本文件去重后路由数: 25)
+
+## apps/api/plane/app/urls/analytic.py
+  - workspaces/<str:slug>/analytics/
+  - workspaces/<str:slug>/analytic-view/
+  - workspaces/<str:slug>/analytic-view/<uuid:pk>/
+  - workspaces/<str:slug>/saved-analytic-view/<uuid:analytic_id>/
+  - workspaces/<str:slug>/export-analytics/
+  - workspaces/<str:slug>/default-analytics/
+  - workspaces/<str:slug>/project-stats/
+  - workspaces/<str:slug>/advance-analytics/
+  - workspaces/<str:slug>/advance-analytics-stats/
+  - workspaces/<str:slug>/advance-analytics-charts/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/advance-analytics/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/advance-analytics-stats/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/advance-analytics-charts/
+  (本文件去重后路由数: 13)
+
+## apps/api/plane/app/urls/api.py
+  - users/api-tokens/
+  - users/api-tokens/<uuid:pk>/
+  (本文件去重后路由数: 2)
+
+## apps/api/plane/app/urls/asset.py
+  - workspaces/<str:slug>/file-assets/
+  - workspaces/file-assets/<uuid:workspace_id>/<str:asset_key>/
+  - users/file-assets/
+  - users/file-assets/<str:asset_key>/
+  - workspaces/file-assets/<uuid:workspace_id>/<str:asset_key>/restore/
+  - assets/v2/workspaces/<str:slug>/
+  - assets/v2/workspaces/<str:slug>/<uuid:asset_id>/
+  - assets/v2/user-assets/
+  - assets/v2/user-assets/<uuid:asset_id>/
+  - assets/v2/workspaces/<str:slug>/restore/<uuid:asset_id>/
+  - assets/v2/static/<uuid:asset_id>/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/<uuid:pk>/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/<uuid:entity_id>/bulk/
+  - assets/v2/workspaces/<str:slug>/check/<uuid:asset_id>/
+  - assets/v2/workspaces/<str:slug>/duplicate-assets/<uuid:asset_id>/
+  - assets/v2/workspaces/<str:slug>/download/<uuid:asset_id>/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/download/<uuid:asset_id>/
+  (本文件去重后路由数: 18)
+
+## apps/api/plane/app/urls/cycle.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/cycle-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/cycle-issues/<uuid:issue_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/date-check/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-cycles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-cycles/<uuid:cycle_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/transfer-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/user-properties/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-cycles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-cycles/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/progress/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/cycles/<uuid:cycle_id>/analytics/
+  (本文件去重后路由数: 14)
+
+## apps/api/plane/app/urls/estimate.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-estimates/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/<uuid:estimate_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/<uuid:estimate_id>/estimate-points/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/estimates/<uuid:estimate_id>/estimate-points/<estimate_point_id>/
+  (本文件去重后路由数: 5)
+
+## apps/api/plane/app/urls/exporter.py
+  - workspaces/<str:slug>/export-issues/
+  (本文件去重后路由数: 1)
+
+## apps/api/plane/app/urls/external.py
+  - unsplash/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/ai-assistant/
+  - workspaces/<str:slug>/ai-assistant/
+  (本文件去重后路由数: 3)
+
+## apps/api/plane/app/urls/intake.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intakes/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intakes/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-issues/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/inboxes/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/inboxes/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/inbox-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/inbox-issues/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-work-items/<uuid:work_item_id>/description-versions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-work-items/<uuid:work_item_id>/description-versions/<uuid:pk>/
+  (本文件去重后路由数: 10)
+
+## apps/api/plane/app/urls/issue.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/list/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues-detail/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/v2/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issue-labels/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issue-labels/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/bulk-create-labels/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/bulk-delete-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/bulk-archive-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/sub-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-links/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-links/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-attachments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-attachments/<uuid:pk>/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/attachments/
+  - assets/v2/workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/attachments/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/history/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/comments/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/comments/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-subscribers/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-subscribers/<uuid:subscriber_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/subscribe/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/reactions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/reactions/<str:reaction_code>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/comments/<uuid:comment_id>/reactions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/comments/<uuid:comment_id>/reactions/<str:reaction_code>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-properties/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:pk>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/issue-relation/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/remove-relation/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/deleted-issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issue-dates/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/versions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/versions/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:work_item_id>/description-versions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/work-items/<uuid:work_item_id>/description-versions/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/meta/
+  - workspaces/<str:slug>/work-items/<str:project_identifier>-<str:issue_identifier>/
+  (本文件去重后路由数: 40)
+
+## apps/api/plane/app/urls/module.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/issues/<uuid:issue_id>/modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/issues/<uuid:issue_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/module-links/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/module-links/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-modules/<uuid:module_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/user-properties/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/modules/<uuid:module_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-modules/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archived-modules/<uuid:pk>/
+  (本文件去重后路由数: 13)
+
+## apps/api/plane/app/urls/notification.py
+  - workspaces/<str:slug>/users/notifications/
+  - workspaces/<str:slug>/users/notifications/<uuid:pk>/
+  - workspaces/<str:slug>/users/notifications/<uuid:pk>/read/
+  - workspaces/<str:slug>/users/notifications/<uuid:pk>/archive/
+  - workspaces/<str:slug>/users/notifications/unread/
+  - workspaces/<str:slug>/users/notifications/mark-all-read/
+  - users/me/notification-preferences/
+  (本文件去重后路由数: 7)
+
+## apps/api/plane/app/urls/page.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages-summary/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/favorite-pages/<uuid:page_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/lock/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/access/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/description/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/versions/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/versions/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/pages/<uuid:page_id>/duplicate/
+  (本文件去重后路由数: 11)
+
+## apps/api/plane/app/urls/project.py
+  - workspaces/<str:slug>/projects/
+  - workspaces/<str:slug>/projects/details/
+  - workspaces/<str:slug>/projects/<uuid:pk>/
+  - workspaces/<str:slug>/project-identifiers/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/invitations/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/invitations/<uuid:pk>/
+  - users/me/workspaces/<str:slug>/projects/invitations/
+  - users/me/workspaces/<str:slug>/project-roles/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/join/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/members/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/members/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/members/leave/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-views/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-members/me/
+  - workspaces/<str:slug>/user-favorite-projects/
+  - workspaces/<str:slug>/user-favorite-projects/<uuid:project_id>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-deploy-boards/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/project-deploy-boards/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/archive/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/preferences/member/<uuid:member_id>/
+  (本文件去重后路由数: 20)
+
+## apps/api/plane/app/urls/search.py
+  - workspaces/<str:slug>/search/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/search-issues/
+  - workspaces/<str:slug>/entity-search/
+  (本文件去重后路由数: 3)
+
+## apps/api/plane/app/urls/state.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/states/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/states/<uuid:pk>/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/intake-state/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/states/<uuid:pk>/mark-default/
+  (本文件去重后路由数: 4)
+
+## apps/api/plane/app/urls/timezone.py
+  - timezones/
+  (本文件去重后路由数: 1)
+
+## apps/api/plane/app/urls/user.py
+  - users/me/
+  - users/session/
+  - users/me/settings/
+  - users/me/email/generate-code/
+  - users/me/email/
+  - users/me/profile/
+  - users/me/accounts/
+  - users/me/accounts/<uuid:pk>/
+  - users/me/instance-admin/
+  - users/me/onboard/
+  - users/me/tour-completed/
+  - users/me/activities/
+  - users/me/workspaces/
+  - users/me/workspaces/<str:slug>/activity-graph/
+  - users/me/workspaces/<str:slug>/issues-completed-graph/
+  - users/me/workspaces/<str:slug>/dashboard/
+  (本文件去重后路由数: 16)
+
+## apps/api/plane/app/urls/views.py
+  - workspaces/<str:slug>/projects/<uuid:project_id>/views/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/views/<uuid:pk>/
+  - workspaces/<str:slug>/views/
+  - workspaces/<str:slug>/views/<uuid:pk>/
+  - workspaces/<str:slug>/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-views/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/user-favorite-views/<uuid:view_id>/
+  (本文件去重后路由数: 7)
+
+## apps/api/plane/app/urls/webhook.py
+  - workspaces/<str:slug>/webhooks/
+  - workspaces/<str:slug>/webhooks/<uuid:pk>/
+  - workspaces/<str:slug>/webhooks/<uuid:pk>/regenerate/
+  - workspaces/<str:slug>/webhook-logs/<uuid:webhook_id>/
+  (本文件去重后路由数: 4)
+
+## apps/api/plane/app/urls/workspace.py
+  - workspace-slug-check/
+  - workspaces/
+  - workspaces/<str:slug>/
+  - workspaces/<str:slug>/invitations/
+  - workspaces/<str:slug>/invitations/<uuid:pk>/
+  - users/me/workspaces/invitations/
+  - workspaces/<str:slug>/invitations/<uuid:pk>/join/
+  - workspaces/<str:slug>/members/
+  - workspaces/<str:slug>/project-members/
+  - workspaces/<str:slug>/members/<uuid:pk>/
+  - workspaces/<str:slug>/members/leave/
+  - users/last-visited-workspace/
+  - workspaces/<str:slug>/workspace-members/me/
+  - workspaces/<str:slug>/workspace-views/
+  - workspaces/<str:slug>/workspace-themes/
+  - workspaces/<str:slug>/workspace-themes/<uuid:pk>/
+  - workspaces/<str:slug>/user-stats/<uuid:user_id>/
+  - workspaces/<str:slug>/user-activity/<uuid:user_id>/
+  - workspaces/<str:slug>/user-activity/<uuid:user_id>/export/
+  - workspaces/<str:slug>/user-profile/<uuid:user_id>/
+  - workspaces/<str:slug>/user-issues/<uuid:user_id>/
+  - workspaces/<str:slug>/labels/
+  - workspaces/<str:slug>/user-properties/
+  - workspaces/<str:slug>/states/
+  - workspaces/<str:slug>/estimates/
+  - workspaces/<str:slug>/modules/
+  - workspaces/<str:slug>/cycles/
+  - workspaces/<str:slug>/user-favorites/
+  - workspaces/<str:slug>/user-favorites/<uuid:favorite_id>/
+  - workspaces/<str:slug>/user-favorites/<uuid:favorite_id>/group/
+  - workspaces/<str:slug>/draft-issues/
+  - workspaces/<str:slug>/draft-issues/<uuid:pk>/
+  - workspaces/<str:slug>/draft-to-issue/<uuid:draft_id>/
+  - workspaces/<str:slug>/quick-links/
+  - workspaces/<str:slug>/quick-links/<uuid:pk>/
+  - workspaces/<str:slug>/home-preferences/
+  - workspaces/<str:slug>/home-preferences/<str:key>/
+  - workspaces/<str:slug>/recent-visits/
+  - workspaces/<str:slug>/stickies/
+  - workspaces/<str:slug>/stickies/<uuid:pk>/
+  - workspaces/<str:slug>/sidebar-preferences/
+  (本文件去重后路由数: 41)
+
+## apps/api/plane/authentication/urls.py
+  - sign-in/
+  - sign-up/
+  - spaces/sign-in/
+  - spaces/sign-up/
+  - sign-out/
+  - spaces/sign-out/
+  - get-csrf-token/
+  - magic-generate/
+  - magic-sign-in/
+  - magic-sign-up/
+  - spaces/magic-generate/
+  - spaces/magic-sign-in/
+  - spaces/magic-sign-up/
+  - google/
+  - google/callback/
+  - spaces/google/
+  - spaces/google/callback/
+  - github/
+  - github/callback/
+  - spaces/github/
+  - spaces/github/callback/
+  - gitlab/
+  - gitlab/callback/
+  - spaces/gitlab/
+  - spaces/gitlab/callback/
+  - email-check/
+  - spaces/email-check/
+  - forgot-password/
+  - reset-password/<uidb64>/<token>/
+  - spaces/forgot-password/
+  - spaces/reset-password/<uidb64>/<token>/
+  - change-password/
+  - set-password/
+  - gitea/
+  - gitea/callback/
+  - spaces/gitea/
+  - spaces/gitea/callback/
+  (本文件去重后路由数: 37)
+
+## apps/api/plane/license/urls.py
+  - 
+  - admins/
+  - admins/me/
+  - admins/session/
+  - admins/sign-out/
+  - admins/<uuid:pk>/
+  - configurations/
+  - configurations/disable-email-feature/
+  - admins/sign-in/
+  - admins/sign-up/
+  - admins/sign-up-screen-visited/
+  - email-credentials-check/
+  - workspace-slug-check/
+  - workspaces/
+  (本文件去重后路由数: 14)
+
+## apps/api/plane/space/urls/asset.py
+  - assets/v2/anchor/<str:anchor>/
+  - assets/v2/anchor/<str:anchor>/<uuid:pk>/
+  - assets/v2/anchor/<str:anchor>/restore/<uuid:pk>/
+  - assets/v2/anchor/<str:anchor>/<uuid:entity_id>/bulk/
+  (本文件去重后路由数: 4)
+
+## apps/api/plane/space/urls/intake.py
+  - anchor/<str:anchor>/intakes/<uuid:intake_id>/intake-issues/
+  - anchor/<str:anchor>/intakes/<uuid:intake_id>/inbox-issues/
+  - anchor/<str:anchor>/intakes/<uuid:intake_id>/intake-issues/<uuid:pk>/
+  - workspaces/<str:slug>/project-boards/
+  (本文件去重后路由数: 4)
+
+## apps/api/plane/space/urls/issue.py
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/comments/
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/comments/<uuid:pk>/
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/reactions/
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/reactions/<str:reaction_code>/
+  - anchor/<str:anchor>/comments/<uuid:comment_id>/reactions/
+  - anchor/<str:anchor>/comments/<uuid:comment_id>/reactions/<str:reaction_code>/
+  - anchor/<str:anchor>/issues/<uuid:issue_id>/votes/
+  (本文件去重后路由数: 8)
+
+## apps/api/plane/space/urls/project.py
+  - anchor/<str:anchor>/meta/
+  - anchor/<str:anchor>/settings/
+  - anchor/<str:anchor>/issues/
+  - workspaces/<str:slug>/projects/<uuid:project_id>/anchor/
+  - anchor/<str:anchor>/cycles/
+  - anchor/<str:anchor>/modules/
+  - anchor/<str:anchor>/states/
+  - anchor/<str:anchor>/labels/
+  - anchor/<str:anchor>/members/
+  (本文件去重后路由数: 9)
+
+## apps/api/plane/urls.py
+  - api/
+  - api/public/
+  - api/instances/
+  - api/v1/
+  - auth/
+  - 
+  - api/schema/
+  - api/schema/swagger-ui/
+  - api/schema/redoc/
+  (本文件去重后路由数: 9)
+
+## apps/api/plane/web/urls.py
+  - robots.txt
+  - 
+  (本文件去重后路由数: 2)
+
